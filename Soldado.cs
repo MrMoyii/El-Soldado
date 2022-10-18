@@ -13,14 +13,25 @@ namespace ElSoldado
         {
             if (_arma != null)
             {
-                Console.WriteLine("Parece que el soldado no tiene ningún arma en sus manos...");
+                Console.WriteLine("Parece que el soldado ya cuenta con un arma en sus manos...");
+            }
+            else 
+            {
+                _arma = arma;
+                Console.WriteLine("Has recogido un " + arma.Nombre);
             } 
-            else _arma = arma;
-
         }
         public void DejarArma()
         {
-            _arma = null;
+            if (_arma == null)
+            {
+                Console.WriteLine("Parece que el soldado no tiene ningún arma en sus manos...");
+            }
+            else
+            {
+                Console.WriteLine("Has dejado el arma.");
+                _arma = null;
+            }
         }
         public void Disparar()
         {
@@ -37,7 +48,6 @@ namespace ElSoldado
                 Console.WriteLine("Parece que el soldado no tiene ningún arma en sus manos...");
             }
             else Console.WriteLine(_arma.Nombre);
-
         }
     }
 }

@@ -20,10 +20,8 @@ namespace ElSoldado
                 {
                     //Recoger un arma
                     case 1:
-
-                        byte opcionArma = MostrarMenuUno.MostrarMenu();
+                        byte opcionArma = MostrarMenuUno.MostrarMenuRecogerArma();
                         MostrarMenuUno.agregarArmaSoldado(opcionArma, ref soldado1);
-                        Console.ReadKey();
                         break;
 
                     //Dejar arma
@@ -64,19 +62,5 @@ namespace ElSoldado
             } while (!byte.TryParse(Console.ReadLine(), out opcion) || opcion < 0 || opcion > 5);
             return opcion;
         }
-        //static byte MostrarMenuUno()
-        //{
-        //    byte opcion = 0;
-        //    do
-        //    {
-        //        Console.Clear();
-        //        Console.WriteLine("Por favor, escoja el arma que desea utilizar:");
-        //        Console.WriteLine("1- Revolver");
-        //        Console.WriteLine("2- Rifle");
-        //        Console.WriteLine("3- Escopeta");
-        //        Console.WriteLine("4- Volver atrás");
-        //    } while (!byte.TryParse(Console.ReadLine(), out opcion) || opcion < 0 || opcion > 4);
-        //    return opcion;
-        //}
     }
 }
