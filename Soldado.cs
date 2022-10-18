@@ -8,5 +8,22 @@ namespace ElSoldado
 {
     class Soldado
     {
+        private Arma _arma;
+        public void RecogerArma(Arma arma)
+        {
+
+        }
+        public void DejarArma()
+        {
+
+        }
+        public void Disparar()
+        {
+
+        }
+        public void VerArma()
+        {
+
+        }
     }
 }
