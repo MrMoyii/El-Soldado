@@ -11,7 +11,12 @@ namespace ElSoldado
         private Arma _arma;
         public void RecogerArma(Arma arma)
         {
-            _arma = arma;
+            if (_arma != null)
+            {
+                Console.WriteLine("Parece que el soldado no tiene ningúnarma en sus manos...");
+            } 
+            else _arma = arma;
+
         }
         public void DejarArma()
         {
@@ -19,11 +24,21 @@ namespace ElSoldado
         }
         public void Disparar()
         {
-            Console.WriteLine(_arma.Disparar());
+            if (_arma == null)
+            {
+                Console.WriteLine("Parece que el soldado no tiene ningúnarma en sus manos...");
+            }
+            else Console.WriteLine(_arma.Disparar());
+
         }
         public void VerArma()
         {
-            Console.WriteLine(_arma.GetType());
+            if (_arma == null)
+            {
+                Console.WriteLine("Parece que el soldado no tiene ningúnarma en sus manos...");
+            }
+            else Console.WriteLine(_arma.GetType());
+
         }
     }
 }
