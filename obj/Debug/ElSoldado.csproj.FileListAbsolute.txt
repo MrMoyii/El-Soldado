@@ -1,0 +1,7 @@
+D:\Users\omarm\source\QuarkAcademy\POO\ElSoldado\ElSoldado\bin\Debug\ElSoldado.exe.config
+D:\Users\omarm\source\QuarkAcademy\POO\ElSoldado\ElSoldado\bin\Debug\ElSoldado.exe
+D:\Users\omarm\source\QuarkAcademy\POO\ElSoldado\ElSoldado\bin\Debug\ElSoldado.pdb
+D:\Users\omarm\source\QuarkAcademy\POO\ElSoldado\ElSoldado\obj\Debug\ElSoldado.csproj.AssemblyReference.cache
+D:\Users\omarm\source\QuarkAcademy\POO\ElSoldado\ElSoldado\obj\Debug\ElSoldado.csproj.CoreCompileInputs.cache
+D:\Users\omarm\source\QuarkAcademy\POO\ElSoldado\ElSoldado\obj\Debug\ElSoldado.exe
+D:\Users\omarm\source\QuarkAcademy\POO\ElSoldado\ElSoldado\obj\Debug\ElSoldado.pdb
