@@ -13,7 +13,7 @@ namespace ElSoldado
         {
             if (_arma != null)
             {
-                Console.WriteLine("Parece que el soldado no tiene ningúnarma en sus manos...");
+                Console.WriteLine("Parece que el soldado no tiene ningún arma en sus manos...");
             } 
             else _arma = arma;
 
@@ -26,18 +26,17 @@ namespace ElSoldado
         {
             if (_arma == null)
             {
-                Console.WriteLine("Parece que el soldado no tiene ningúnarma en sus manos...");
+                Console.WriteLine("Parece que el soldado no tiene ningún arma en sus manos...");
             }
             else Console.WriteLine(_arma.Disparar());
-
         }
         public void VerArma()
         {
             if (_arma == null)
             {
-                Console.WriteLine("Parece que el soldado no tiene ningúnarma en sus manos...");
+                Console.WriteLine("Parece que el soldado no tiene ningún arma en sus manos...");
             }
-            else Console.WriteLine(_arma.GetType());
+            else Console.WriteLine(_arma.Nombre);
 
         }
     }

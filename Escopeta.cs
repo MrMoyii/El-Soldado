@@ -8,6 +8,10 @@ namespace ElSoldado
 {
     class Escopeta : Arma
     {
+        public Escopeta()
+        {
+            nombre = "Escopeta";
+        }
         public override string Disparar()
         {
             return "!Pááá!...";

@@ -29,20 +29,17 @@ namespace ElSoldado
                 //recoge un Revolver
                 case 1:
                     soldado.RecogerArma(new Revolver());
-                    //Console.WriteLine("Revolver");
-                    Console.ReadKey();
+                    Console.WriteLine("Has recodigo un Revolver");
                     break;
                 //recoge un Rifle
                 case 2:
                     soldado.RecogerArma(new Rifle());
-                    Console.WriteLine("Rifle");
-                    Console.ReadKey();
+                    Console.WriteLine("Has recodigo un Rifle");
                     break;
                 //recoge una Escopeta
                 case 3:
                     soldado.RecogerArma(new Escopeta());
-                    Console.WriteLine("Escopeta");
-                    Console.ReadKey();
+                    Console.WriteLine("Has recodigo un Escopeta");
                     break;
             }
         }

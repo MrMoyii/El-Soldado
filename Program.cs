@@ -20,13 +20,10 @@ namespace ElSoldado
                 {
                     //Recoger un arma
                     case 1:
-                        byte opcionArma;
-                        do
-                        {
-                            opcionArma = MostrarMenuUno.MostrarMenu();
-                            MostrarMenuUno.agregarArmaSoldado(opcionArma, ref soldado1);
-                            Console.ReadKey();
-                        } while (opcionArma != 4);
+
+                        byte opcionArma = MostrarMenuUno.MostrarMenu();
+                        MostrarMenuUno.agregarArmaSoldado(opcionArma, ref soldado1);
+                        Console.ReadKey();
                         break;
 
                     //Dejar arma

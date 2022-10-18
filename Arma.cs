@@ -8,7 +8,9 @@ namespace ElSoldado
 {
     abstract class Arma
     {
-        protected string nombre;
+        protected string nombre = "";
+
+        public string Nombre { get => nombre; }
 
         public abstract string Disparar();
     }

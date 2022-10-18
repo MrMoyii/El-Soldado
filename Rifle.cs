@@ -8,9 +8,14 @@ namespace ElSoldado
 {
     class Rifle : Arma
     {
+        public Rifle()
+        {
+            nombre = "Rifle";
+        }
         public override string Disparar()
         {
             return "Púm púm púm...";
         }
+
     }
 }
