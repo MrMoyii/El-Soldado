@@ -8,7 +8,7 @@ namespace ElSoldado
 {
     static class MostrarMenuUno
     {
-        static public byte MostrarMenu()
+        static public byte MostrarMenuRecogerArma()
         {
             byte opcion = 0;
             do
@@ -19,27 +19,27 @@ namespace ElSoldado
                 Console.WriteLine("2- Rifle");
                 Console.WriteLine("3- Escopeta");
                 Console.WriteLine("4- Volver atrás");
-            } while (!byte.TryParse(Console.ReadLine(), out opcion) || opcion < 0 || opcion > 4);
+            } while (!byte.TryParse(Console.ReadLine(), out opcion) || opcion < 1 || opcion > 4);
             return opcion;
         }
-        static public void agregarArmaSoldado(byte arma, ref Soldado  soldado)
+        static public void agregarArmaSoldado(byte arma, ref Soldado soldado)
         {
             switch (arma)
             {
                 //recoge un Revolver
                 case 1:
                     soldado.RecogerArma(new Revolver());
-                    Console.WriteLine("Has recodigo un Revolver");
+                    Console.ReadKey();
                     break;
                 //recoge un Rifle
                 case 2:
                     soldado.RecogerArma(new Rifle());
-                    Console.WriteLine("Has recodigo un Rifle");
+                    Console.ReadKey();
                     break;
                 //recoge una Escopeta
                 case 3:
                     soldado.RecogerArma(new Escopeta());
-                    Console.WriteLine("Has recodigo un Escopeta");
+                    Console.ReadKey();
                     break;
             }
         }
